@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="GIS(latest)">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../Program Files/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="GIS(latest).classpath">
+        <pathelement location="bin"/>
+        <pathelement location="library/batik-transcoder-1.7.jar"/>
+        <pathelement location="library/common-2.6.0.jar"/>
+        <pathelement location="library/commons-beanutils-1.7.0.jar"/>
+        <pathelement location="library/commons-collections-3.1.jar"/>
+        <pathelement location="library/commons-dbcp-1.3.jar"/>
+        <pathelement location="library/commons-digester-1.7.jar"/>
+        <pathelement location="library/commons-httpclient-3.1.jar"/>
+        <pathelement location="library/commons-io-1.2.jar"/>
+        <pathelement location="library/commons-io-1.4.jar"/>
+        <pathelement location="library/commons-jxpath-1.3.jar"/>
+        <pathelement location="library/commons-pool-1.5.4.jar"/>
+        <pathelement location="library/core.commands-3.6.0.I20100512-1500.jar"/>
+        <pathelement location="library/core.runtime-3.6.0.v20100505.jar"/>
+        <pathelement location="library/eastwood-1.1.1-SNAPSHOT.jar"/>
+        <pathelement location="library/ecore-2.6.1.jar"/>
+        <pathelement location="library/ehcache-1.6.2.jar"/>
+        <pathelement location="library/equinox.common-3.6.0.v20100503.jar"/>
+        <pathelement location="library/geodb-0.6-SNAPSHOT.jar"/>
+        <pathelement location="library/gt-api-8.0-M4.jar"/>
+        <pathelement location="library/gt-app-schema-8.0-M4.jar"/>
+        <pathelement location="library/gt-app-schema-resolver-8.0-M4.jar"/>
+        <pathelement location="library/gt-arcgrid-8.0-M4.jar"/>
+        <pathelement location="library/gt-arcsde-8.0-M4.jar"/>
+        <pathelement location="library/gt-arcsde-common-8.0-M4.jar"/>
+        <pathelement location="library/gt-brewer-8.0-M4.jar"/>
+        <pathelement location="library/gt-charts-8.0-M4.jar"/>
+        <pathelement location="library/gt-coverage-8.0-M4.jar"/>
+        <pathelement location="library/gt-cql-8.0-M4.jar"/>
+        <pathelement location="library/gt-data-8.0-M4.jar"/>
+        <pathelement location="library/gt-epsg-extension-8.0-M4.jar"/>
+        <pathelement location="library/gt-epsg-hsql-8.0-M4.jar"/>
+        <pathelement location="library/gt-epsg-postgresql-8.0-M4.jar"/>
+        <pathelement location="library/gt-epsg-wkt-8.0-M4.jar"/>
+        <pathelement location="library/gt-feature-pregeneralized-8.0-M4.jar"/>
+        <pathelement location="library/gt-geojson-8.0-M4.jar"/>
+        <pathelement location="library/gt-geotiff-8.0-M4.jar"/>
+        <pathelement location="library/gt-graph-8.0-M4.jar"/>
+        <pathelement location="library/gt-grassraster-8.0-M4.jar"/>
+        <pathelement location="library/gt-grid-8.0-M4.jar"/>
+        <pathelement location="library/gt-gtopo30-8.0-M4.jar"/>
+        <pathelement location="library/gt-image-8.0-M4.jar"/>
+        <pathelement location="library/gt-imageio-ext-gdal-8.0-M4.jar"/>
+        <pathelement location="library/gt-imagemosaic-8.0-M4.jar"/>
+        <pathelement location="library/gt-imagemosaic-jdbc-8.0-M4.jar"/>
+        <pathelement location="library/gt-imagepyramid-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-db2-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-h2-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-mysql-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-oracle-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-postgis-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-spatialite-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-sqlserver-8.0-M4.jar"/>
+        <pathelement location="library/gt-jdbc-teradata-8.0-M4.jar"/>
+        <pathelement location="library/gt-jp2k-8.0-M4.jar"/>
+        <pathelement location="library/gt-main-8.0-M4.jar"/>
+        <pathelement location="library/gt-metadata-8.0-M4.jar"/>
+        <pathelement location="library/gt-opengis-8.0-M4.jar"/>
+        <pathelement location="library/gt-process-8.0-M4.jar"/>
+        <pathelement location="library/gt-property-8.0-M4.jar"/>
+        <pathelement location="library/gt-referencing-8.0-M4.jar"/>
+        <pathelement location="library/gt-referencing3D-8.0-M4.jar"/>
+        <pathelement location="library/gt-render-8.0-M4.jar"/>
+        <pathelement location="library/gt-sample-data-8.0-M4.jar"/>
+        <pathelement location="library/gt-sample-data-access-8.0-M4.jar"/>
+        <pathelement location="library/gt-sde-dummy-8.0-M4.jar"/>
+        <pathelement location="library/gt-shapefile-8.0-M4.jar"/>
+        <pathelement location="library/gt-svg-8.0-M4.jar"/>
+        <pathelement location="library/gt-swing-8.0-M4.jar"/>
+        <pathelement location="library/gt-swt-8.0-M4.jar"/>
+        <pathelement location="library/gt-validation-8.0-M4.jar"/>
+        <pathelement location="library/gt-wfs-8.0-M4.jar"/>
+        <pathelement location="library/gt-wms-8.0-M4.jar"/>
+        <pathelement location="library/gt-xml-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-core-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-fes-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-filter-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-gml2-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-gml3-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-kml-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-ows-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-sld-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-wcs-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-wfs-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-wms-8.0-M4.jar"/>
+        <pathelement location="library/gt-xsd-wps-8.0-M4.jar"/>
+        <pathelement location="library/h2-1.1.119.jar"/>
+        <pathelement location="library/hsqldb-1.8.0.7.jar"/>
+        <pathelement location="library/icu4j-3.4.4.jar"/>
+        <pathelement location="library/imageio-ext-arcgrid-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalarcbinarygrid-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdaldted-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalecw-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalecwjp2-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalehdr-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalenvihdr-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalerdasimg-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalidrisi-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalkakadujp2-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalmrsid-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalmrsidjp2-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalnitf-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-gdalrpftoc-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-imagereadmt-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-kakadu-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-tiff-1.1.2.jar"/>
+        <pathelement location="library/imageio-ext-utilities-1.1.2.jar"/>
+        <pathelement location="library/jai_codec-1.1.3.jar"/>
+        <pathelement location="library/jai_core-1.1.3.jar"/>
+        <pathelement location="library/jai_imageio-1.1.jar"/>
+        <pathelement location="library/jdom-1.0.jar"/>
+        <pathelement location="library/jface-3.6.1.M20100825-0800.jar"/>
+        <pathelement location="library/json-simple-1.1.jar"/>
+        <pathelement location="library/jsqlparser-0.3.14.jar"/>
+        <pathelement location="library/jsr-275-1.0-beta-2.jar"/>
+        <pathelement location="library/jt-utils-1.2.0.jar"/>
+        <pathelement location="library/jt-vectorbinarize-1.2.0.jar"/>
+        <pathelement location="library/jt-zonalstats-1.2.0.jar"/>
+        <pathelement location="library/jts-1.12.jar"/>
+        <pathelement location="library/junit-4.4.jar"/>
+        <pathelement location="library/miglayout-3.7-swing.jar"/>
+        <pathelement location="library/mysql-connector-java-5.1.17.jar"/>
+        <pathelement location="library/net.opengis.fes-8.0-M4.jar"/>
+        <pathelement location="library/net.opengis.ows-8.0-M4.jar"/>
+        <pathelement location="library/net.opengis.wcs-8.0-M4.jar"/>
+        <pathelement location="library/net.opengis.wfs-8.0-M4.jar"/>
+        <pathelement location="library/net.opengis.wfsv-8.0-M4.jar"/>
+        <pathelement location="library/net.opengis.wps-8.0-M4.jar"/>
+        <pathelement location="library/org.w3.xlink-8.0-M4.jar"/>
+        <pathelement location="library/picocontainer-1.2.jar"/>
+        <pathelement location="library/postgresql-8.4-701.jdbc3.jar"/>
+        <pathelement location="library/sqlite-jdbc-spatialite-3.7.2-1.jar"/>
+        <pathelement location="library/ui.workbench-3.6.1.M20100826-1330.jar"/>
+        <pathelement location="library/vecmath-1.3.2.jar"/>
+        <pathelement location="library/xercesImpl-2.7.1.jar"/>
+        <pathelement location="library/xml-apis-xerces-2.7.1.jar"/>
+        <pathelement location="library/xml-commons-resolver-1.2.jar"/>
+        <pathelement location="library/xpp3-1.1.3.4.O.jar"/>
+        <pathelement location="library/xsd-2.6.0.jar"/>
+        <pathelement location="library/org.eclipse.swt.win32.win32.x86_3.7.2.v3740f.jar"/>
+    </path>
+    <path id="run.App.bootclasspath">
+        <fileset dir="${java.home}/lib" includes="*.jar"/>
+        <fileset dir="${java.home}/lib/ext" includes="*.jar"/>
+    </path>
+    <path id="run.Main.bootclasspath">
+        <fileset dir="${java.home}/lib" includes="*.jar"/>
+        <fileset dir="${java.home}/lib/ext" includes="*.jar"/>
+    </path>
+    <path id="run.MapViewer.bootclasspath">
+        <fileset dir="${java.home}/lib" includes="*.jar"/>
+        <fileset dir="${java.home}/lib/ext" includes="*.jar"/>
+    </path>
+    <path id="run.RichMapViewer.bootclasspath">
+        <fileset dir="${java.home}/lib" includes="*.jar"/>
+        <fileset dir="${java.home}/lib/ext" includes="*.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="GIS(latest).classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="App">
+        <java classname="org.bisag.test.App" failonerror="true" fork="yes">
+            <classpath refid="GIS(latest).classpath"/>
+            <bootclasspath>
+                <path refid="run.App.bootclasspath"/>
+            </bootclasspath>
+        </java>
+    </target>
+    <target name="Main">
+        <java classname="org.bisag.richclient.Main" failonerror="true" fork="yes">
+            <classpath refid="GIS(latest).classpath"/>
+            <bootclasspath>
+                <path refid="run.Main.bootclasspath"/>
+            </bootclasspath>
+        </java>
+    </target>
+    <target name="MapViewer">
+        <java classname="org.bisag.main.Main" failonerror="true" fork="yes">
+            <classpath refid="GIS(latest).classpath"/>
+            <bootclasspath>
+                <path refid="run.MapViewer.bootclasspath"/>
+            </bootclasspath>
+        </java>
+    </target>
+    <target name="RichMapViewer">
+        <java classname="org.bisag.richclient.RichMapViewer" failonerror="true" fork="yes">
+            <classpath refid="GIS(latest).classpath"/>
+            <bootclasspath>
+                <path refid="run.RichMapViewer.bootclasspath"/>
+            </bootclasspath>
+        </java>
+    </target>
+</project>

@@ -1,0 +1,7 @@
+.DS_STORE
+.classpath
+.fatjar
+.project
+.settings/
+.externalToolBuilders
+bin/
