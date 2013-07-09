@@ -7,6 +7,8 @@ This project was a part of an internship at [BISAG](http://www.bisag.gujarat.gov
 
 BISAG is a State level nodal agency to facilitate the use of spatial and geo-spatial technologies for the planning and developmental activities pertaining to Agriculture, Land and Water Resource Management, Wasteland/Watershed Development, Forestry, Disaster Management, Infrastructure and Education.
 
+[**Paper presented in International Conference**](http://goo.gl/fwg6d)
+
 Contributors :
 --------------
 - [Rakshit Majithiya](http://ca.linkedin.com/in/geekrax)  
