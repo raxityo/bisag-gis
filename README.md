@@ -1,5 +1,6 @@
 BISAG - GIS
 ===========
+![BISAG](bisag.jpg "BISAG")
 
 An opensource GIS application built in Java using [GeoTools](http://www.geotools.org/) api.
 
@@ -11,8 +12,8 @@ BISAG is a State level nodal agency to facilitate the use of spatial and geo-spa
 
 Contributors :
 --------------
-- [Rakshit Majithiya](http://ca.linkedin.com/in/geekrax)  
-- [Shreelekha Tanna](http://ca.linkedin.com/in/shreelekha)  
+- [Rakshit Majithiya](http://ca.linkedin.com/in/geekrax)
+- [Shreelekha Tanna](http://ca.linkedin.com/in/shreelekha)
 - Viral Vasara
 
 Supervisor :
