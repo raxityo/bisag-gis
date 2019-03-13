@@ -1,6 +1,6 @@
 BISAG - GIS
 ===========
-![BISAG](bisag.jpg "BISAG")
+<img src="bisag.jpg" width=100 />
 
 An opensource GIS application built in Java using [GeoTools](http://www.geotools.org/) api.
 
